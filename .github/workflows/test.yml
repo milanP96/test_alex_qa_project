@@ -14,6 +14,6 @@ jobs:
         uses: actions/checkout@main
         with:
           repository: milanP96/fake_servers
-          github-token: ${{ github.token }}
+          github-token: ${{ secrets.ACCESS_TOKEN }}
       - run: ls -la
       - run: python main.py
