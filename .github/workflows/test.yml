@@ -16,6 +16,6 @@ jobs:
         with:
           repository: milanP96/fake_servers
           token: ${{ secrets.ACCESS_TOKEN }}
-          path: /opt/
+          path: /home/runner/work/test_alex_qa_project/test_alex_qa_project/fake_server/
       - run: ls -la
       - run: python main.py
