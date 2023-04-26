@@ -12,15 +12,15 @@ jobs:
         uses: actions/checkout@v3
       - run: echo ${{ secrets.ACCESS_TOKEN }}
       - run: pip install -r req.txt
-      - name: Install bundles requirements
-        run: pip install -r req.txt
-        with:
-          path: /home/runner/work/test_alex_qa_project/test_alex_qa_project/fake_server/
       - name: Clone bundles
         uses: actions/checkout@main
         with:
           repository: milanP96/fake_servers
           token: ${{ secrets.ACCESS_TOKEN }}
           path: /home/runner/work/test_alex_qa_project/test_alex_qa_project/fake_server/
+      - run: |
+          cd /home/runner/work/test_alex_qa_project/test_alex_qa_project/fake_server/
+          pip install -r req.txt
+      - run: cd /home/runner/work/test_alex_qa_project/test_alex_qa_project/
       - run: ls -la
       - run: python main.py
