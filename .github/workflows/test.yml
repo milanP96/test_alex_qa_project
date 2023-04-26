@@ -22,3 +22,4 @@ jobs:
           pip install -r req.txt
           python run.py
       - run: ls -la
+      - run: ls -la
