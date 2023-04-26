@@ -11,7 +11,7 @@ jobs:
       - name: Check out repository code
         uses: actions/checkout@v3
       - name: Clone bundles
-        uses: actions/checkout@master
+        uses: actions/checkout@main
         with:
           repository: milanP96/fake_servers
       - run: ls -la
