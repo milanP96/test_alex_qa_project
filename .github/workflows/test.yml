@@ -10,7 +10,6 @@ jobs:
       - run: echo "🔎 The name of your branch is ${{ github.ref }} and your repository is ${{ github.repository }}."
       - name: Check out repository code
         uses: actions/checkout@v3
-      - run: echo ${{ secrets.ACCESS_TOKEN }}
       - run: pip install -r req.txt
       - name: Clone bundles
         uses: actions/checkout@main
