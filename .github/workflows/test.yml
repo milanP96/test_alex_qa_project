@@ -21,6 +21,6 @@ jobs:
           cd /home/runner/work/test_alex_qa_project/test_alex_qa_project/fake_server/
           pip install -r req.txt
           python run.py
-      - run: cd /home/runner/work/test_alex_qa_project/test_alex_qa_project/
+          cd /home/runner/work/test_alex_qa_project/test_alex_qa_project/
+          python main.py
       - run: ls -la
-      - run: python main.py
