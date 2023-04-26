@@ -5,7 +5,7 @@
 import requests
 
 def print_hi():
-    res = requests.post(f'http://127.0.0.1:5000/services/oauth2/token')
+    res = requests.post(f'http://0.0.0.0:5000/services/oauth2/token')
     print(res, "This is http response from fake server")
 
 # Press the green button in the gutter to run the script.
