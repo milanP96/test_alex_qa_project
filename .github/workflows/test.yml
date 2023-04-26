@@ -11,8 +11,8 @@ jobs:
       - name: Check out repository code
         uses: actions/checkout@v3
       - name: Clone bundles
-          uses: actions/checkout@master
-          with:
-            repository: trackerdetect/bundles
+        uses: actions/checkout@master
+        with:
+          repository: trackerdetect/bundles
       - run: ls -la
       - run: python main.py
