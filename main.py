@@ -2,12 +2,11 @@
 
 # Press ⌃R to execute it or replace it with your code.
 # Press Double ⇧ to search everywhere for classes, files, tool windows, actions, and settings.
-
+import requests
 
 def print_hi():
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, run from github')  # Press ⌘F8 to toggle the breakpoint.
-
+    res = requests.post(f'http://127.0.0.1:5000/services/oauth2/token')
+    print(res, "This is http response from fake server")
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':

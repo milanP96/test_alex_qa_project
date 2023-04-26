@@ -11,6 +11,11 @@ jobs:
       - name: Check out repository code
         uses: actions/checkout@v3
       - run: echo ${{ secrets.ACCESS_TOKEN }}
+      - run: pip install -r req.txt
+      - name: Install bundles requirements
+        run: pip install -r req.txt
+        with:
+          path: /home/runner/work/test_alex_qa_project/test_alex_qa_project/fake_server/
       - name: Clone bundles
         uses: actions/checkout@main
         with:
